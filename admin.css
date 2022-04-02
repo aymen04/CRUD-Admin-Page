@@ -1,0 +1,23 @@
+body{
+    background-color:#B8860B ;
+}
+
+
+
+form{
+    text-align: center;
+    display:table-caption ;
+    margin-left: 493px;
+}
+
+main{
+    margin-left: 1075px;
+    border: 4px solid black;
+    text-align: center;
+    height: 311px;
+}
+
+table{
+    border-color: black;
+}
+

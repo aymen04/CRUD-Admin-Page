@@ -1,0 +1,30 @@
+body{
+    background-color: #B8860B;
+    color: white;
+    margin-top: 378px;
+    display: inline-block;
+    text-align: center;
+    margin-left: 294px;
+}
+
+form{
+    text-align: center;
+    display: table-caption;
+    margin-left: 345px;
+    border: solid;
+    height: 307px;
+    width: 191px;
+}
+
+
+p{
+    margin-left: 689px;
+}
+
+main{
+    margin-left: 348px;
+}
+
+tbody{
+    text-align: center;
+}

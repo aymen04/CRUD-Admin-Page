@@ -1,0 +1,13 @@
+INSERT INTO `product`(`pr_id`, `pr_name`, `pr_price`, `pr_categorie`) VALUES (1, test,10 ,1)
+
+  if(isset($_POST["btadd"])){
+        var_dump($_POST);
+    $bdd1 = new PDO('mysql:host=localhost:8889;dbname=PHPPerso', "root", "root");
+    $stmt1 = $bdd1->prepare("INSERT INTO product (pr_id, pr_name, pr_price, pr_categorie) VALUES (NULL, :name, :price, :categorie)");
+    $stmt1->bindValue(':name', $_POST["name"], PDO::PARAM_STR);
+    $stmt1->bindValue(':price', $_POST["price"], PDO::PARAM_INT);
+    $stmt1->bindValue(':categorie', $_POST["categorie"], PDO::PARAM_INT);
+    $stmt1->execute(); 
+    } else {
+        echo "erreur dans la requete SQL";
+    }
